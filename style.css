@@ -22,7 +22,7 @@ html {
   flex: content;
   gap: 2em;
   width: 100vw;
-  background-color: #8e5c41;
+  background-color: #f76707;
   padding: 1em;
 }
 
@@ -34,7 +34,14 @@ html {
 
 .nav-bar h1 {
   font-size: 2em;
-  color: white;
+  color: #f1f3f5;
+}
+
+.add-book {
+  width: 3em;
+  margin-top: 0.5em;
+  margin-left: auto;
+  margin-right: 2em;
 }
 
 /* CARDS */
@@ -42,8 +49,58 @@ html {
 .card-list {
   padding: 2em;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
 }
 
 .card {
-  background-color: #8e5c41;
+  font-size: larger;
+  background-color: #f1f3f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1em;
+  padding: 1em;
+  border-radius: 25px;
+  border: 2px solid black;
+}
+
+.book-icon {
+  width: 3em;
+}
+
+.book-icon:active,
+:visited,
+:link,
+:hover {
+  color: black;
+}
+
+.bottom-card {
+  margin-top: 3em;
+  font-size: 10px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons button {
+  border-radius: 50%;
+  padding: 0.5em;
+  background-color: #ff922b;
+  border: none;
+  width: 2.5em;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #f76707;
+  border: none;
+}
+
+.buttons {
+  margin-right: 7em;
 }
