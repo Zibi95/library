@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: url(./pexels-olena-bohovyk-3646105.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+}
+
+/* NAV */
+.nav-bar {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  flex: content;
+  gap: 2em;
+  width: 100vw;
+  background-color: #8e5c41;
+  padding: 1em;
+}
+
+.nav-bar > img {
+  margin-left: 1em;
+  transform: rotate(-20deg);
+  width: 5rem;
+}
+
+.nav-bar h1 {
+  font-size: 2em;
+  color: white;
+}
+
+/* CARDS */
+
+.card-list {
+  padding: 2em;
+  display: flex;
+}
+
+.card {
+  background-color: #8e5c41;
+}
