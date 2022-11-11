@@ -1,5 +1,7 @@
 "use strict";
 
+// const cors = require("cors");
+
 // elements
 const html = document.querySelector("html");
 const cardList = document.querySelector(".card-list");
@@ -27,21 +29,22 @@ cardList.addEventListener("click", function (e) {
     saveLocalStorage();
   }
 
+  if (modalAddBook.classList.value.includes("active")) {
+    closeModal();
+  }
   if (e.target.closest(".edit")) {
+    // setting a values that are alredy in library
     inputTitle.value = library[index].title;
     inputAuthor.value = library[index].author;
     inputPages.value = library[index].pages;
     inputStatus.value = library[index].status;
+
     inputTitle.focus();
     openModal();
     submitButton.dataset.id = `${index}`;
     submitButton.classList.add("edit");
     submitButton.classList.remove("submit");
     submitButton.textContent = "EDIT";
-  }
-
-  if (modalAddBook.classList.value.includes("active")) {
-    closeModal();
   }
 });
 
