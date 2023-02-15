@@ -2,4 +2,4 @@
 
 ## zibi95.github.io/library/#
 
-Testing out OOP
+Library App with VanillaJS
